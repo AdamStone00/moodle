@@ -56,7 +56,7 @@ $CFG->dboptions = array(
                                 //  (please note mysql is always using socket
                                 //  if dbhost is 'localhost' - if you need
                                 //  local port connection use '127.0.0.1')
-    'dbport'    => '',          // the TCP port number to use when connecting
+    'dbport'    => '5432',          // the TCP port number to use when connecting
                                 //  to the server. keep empty string for the
                                 //  default port
     'dbhandlesoptions' => false,// On PostgreSQL poolers like pgbouncer don't
@@ -84,7 +84,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://example.com/moodle';
+$CFG->wwwroot   = 'https://stc-moodle.herokuapp.com';
 
 
 //=========================================================================
@@ -100,7 +100,7 @@ $CFG->wwwroot   = 'http://example.com/moodle';
 //
 // - On Windows systems you might specify something like 'c:\moodledata'
 
-$CFG->dataroot  = '/home/example/moodledata';
+$CFG->dataroot  = '/tmp';
 
 
 //=========================================================================
